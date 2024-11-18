@@ -41,6 +41,8 @@ services:
         condition: service_healthy
       walrus-deploy:
         condition: service_completed_successfully
+    # ports:
+    #   - 9185:9185 # Uncomment to expose the REST API port.
     networks:
       testbed-network:
         ipv4_address: 10.0.0.10
