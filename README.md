@@ -8,6 +8,7 @@ This setup launches:
 
 ## How to Run
 Simply execute `docker compose up` (the latest Docker versions have deprecated `docker-compose`).
+You might see some errors like `ERROR mysten_metrics::thread_stall_monitor: Thread stalled for 521ms`, this is completely normal and won't block anything.
 
 ## How to Interact with the Network
 1. Use `docker ps` to view all running containers. Look for containers with the images:
