@@ -32,11 +32,12 @@ You might see some errors like `ERROR mysten_metrics::thread_stall_monitor: Thre
      - `walrus get-wal <amount_in_mist>` (e.g., `500000000000` for 500 WAL).
 
 4. To store data on the Walrus Network:
+
    - Shell into any storage node container and run (all of them are pre-configured with a `walrus` client):
      - `walrus store <file>` to upload data.
      - Similarly, use `walrus` commands to retrieve stored data.
 
-5.Optionally, you can expose port 9185 from any storage node container and interact with the REST API from you local development environment.Similarly, use walrus commands to retrieve stored data.
+5. Optionally, you can expose port 9185 from any storage node container and interact with the REST API from you local development environment.Similarly, use walrus commands to retrieve stored data.
 
 ## What Happens Behind the Scenes
 
