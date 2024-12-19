@@ -27,7 +27,7 @@ services:
         condition: service_healthy
     networks:
       testbed-network:
-    image: ${WALRUS_IMAGE_NAME:-mysten/walrus-service:9eeee2f17198ed8683967af8c8ed7d7c985398ef}
+    image: ${WALRUS_IMAGE_NAME:-mysten/walrus-service:devnet-v1.7.2}
     platform: ${WALRUS_PLATFORM:-linux/amd64}
     hostname: walrus-deploy
     container_name: walrus-deploy
@@ -46,7 +46,7 @@ services:
     networks:
       testbed-network:
         ipv4_address: 10.0.0.10
-    image: ${WALRUS_IMAGE_NAME:-mysten/walrus-service:9eeee2f17198ed8683967af8c8ed7d7c985398ef}
+    image: ${WALRUS_IMAGE_NAME:-mysten/walrus-service:devnet-v1.7.2}
     platform: ${WALRUS_PLATFORM:-linux/amd64}
     hostname: dryrun-node-0
     container_name: dryrun-node-0
