@@ -21,7 +21,7 @@ services:
       - sui-bin:/root/sui_bin
 
   walrus-deploy:
-    restart: no
+    restart: "no"
     depends_on:
       sui-localnet:
         condition: service_healthy
